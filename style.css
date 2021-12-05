@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Outfit:wght@300;400;600&display=swap');
 
 
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -24,7 +25,6 @@
   --mobile: 375px;
   --desktop: 1440px;
   font-size: 18px;
-
 }
 
 body {
@@ -32,19 +32,18 @@ body {
   background-color: var(--main-bg-color);
   font-family:'Outfit', sans-serif;
   color: var(--soft-blue);
-  max-height: 100vh;
+  height: 100vh;
   max-width: 100vw;
-  display: grid;
+  display: grid;  
   place-items:center;
   font-size: 1em;
+  margin: 0;
 }
 
 .card {
   background: var(--card-bg-color);
-  position: relative;
-  top:6vw;
   padding: 1.5em;
-  height: 65vh;
+  height: 600px;
   width: 35vh;
   border-radius: 20px;
   box-shadow: 0 2em 0 1em rgba(0,0,0, .1);
@@ -89,62 +88,43 @@ a:hover,
   border-bottom: 1px solid var(--line-color);
 }
 
-.feature-content,
-.eth {
-  display: inline;
-}
 
+.eth, .time {
+  display:flex;
+  align-items:center;
+}
 
 .feature {
-  display: grid;
-  grid-auto-flow: column;
-  padding: 1em 0 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.time {
-    display: inline;
-    position: absolute;
-    right: 1.5em;
+.author-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
 }
-
-
-.artist {
-  display: inline;
-  width: 100%;
-  top: 1em;
-
-}
-
-/* .avatar-container {
-  width: 2.2em;
-  height: 2.2em;
-  clip-path: circle(50% at 50% 50%);
-  background: white;
-  position: relative;
-}
-
-*/
 
 .avatar {
   width: 2em;
-  margin-top: 1em;
   border: 2px solid white;
   border-radius: 100px;
 }
 
-
 .artist-name {
-  display: inline;
-  position: absolute;
-  margin-top: 1.5em;
-  margin-left: 0.5em;
+  margin:0;
+  padding-left: 10px;
 }
+
 
 @media (max-width: 375px) {
   .card {
       box-shadow: none;
     }
-    body {
-      font-size: 8px;
+
+  body {
+      font-size: 12px;
   }
 }
