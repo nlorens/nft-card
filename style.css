@@ -43,7 +43,7 @@ body {
 .card {
   background: var(--card-bg-color);
   padding: 1.5em;
-  height: 550px;
+  height: 500px;
   width: 35vh;
   border-radius: 20px;
   box-shadow: 0 2em 0 1em rgba(0,0,0, .1);
